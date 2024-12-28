@@ -1,9 +1,9 @@
 import Heading from './components';
 
 function App() {
-  return <centre>
+  return <center>
     <Heading />
-  </centre>
+  </center>
 }
 
 export default App;
