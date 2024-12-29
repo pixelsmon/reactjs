@@ -1,9 +1,9 @@
 import Heading from './components';
-
-function App() {
-  return <center>
-    <Heading />
-  </center>
+import ListGroups from './components/Lists';
+function  App() {
+  return <div>
+    <ListGroups />
+  </div>
 }
 
 export default App;
