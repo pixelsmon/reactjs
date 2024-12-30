@@ -1,23 +1,26 @@
 
-
 function ListGroups() {
   let students = [
     "akarsh", "harsh", "gnani", "chandu"
   ]
-
-  const mapFunctionForList = students.map(student => <ul> <li key={student}>
-    {student}
-  </li></ul>
+  // const Click = (student, index) => {
+  // console.log(student, index)
+  //}
+  const Click = (event) => console.log(event.target
   )
-
+  const mapFunctionForList = students.map((student, index) =>
+    <ul className="list-group">
+      <li className="list-group-item" key={student} onClick={Click}>{student}
+      </li></ul>
+  )
+  //let good = students.length !== 1 && <p>Good</p>
 
   return <>
     <h1><b>List  Of </b><i>Students</i></h1>
-
     {mapFunctionForList}
 
-  </>
 
+  </>
 
 }
 
@@ -47,5 +50,7 @@ export default ListGroups
 
 </>
 }
+
+  
 export default ListGroups; */
 
